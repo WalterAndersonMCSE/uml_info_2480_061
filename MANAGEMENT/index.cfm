@@ -12,9 +12,14 @@
     
    <body>
        
-
-
-       
+     <cfparam name="tool" default="addEdit" />  
+       <div id="wrapper" class="container">     
+          <div id="navarea"> NAV </div>       
+           <div id="mainarea">           
+            <cfinclude template="#tool#.cfm" />     
+               </div>  
+          </div>    
+          
    </body> 
 
 </html>
